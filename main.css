@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 600px;
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+}
+
+.list-item:not(:first-child) {
+  border-top: 1px solid #ccc;
+}
+
+.list-item > span {
+  flex-grow: 1;
+}
+
+button {
+  font-size: 16px;
+}
+
+#share {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 12px;
+  border-radius: 99px;
+  border: none;
+  background-color: #00f;
+  cursor: pointer;
+  color: white;
+}
+
+#share:hover {
+  background-color: #00c;
+}
+
+#share:active {
+  background-color: #00a;
+}
